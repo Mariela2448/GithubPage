@@ -1,0 +1,78 @@
+/* presentación */
+document.write("Hola, mi nombre es Mariela Lopez");
+document.write("<br>");
+document.write("Soy estudiante");
+document.write("<br>");
+document.write("Me gusta mucho dibujar");
+document.write("<br>");
+document.write("<br>");
+document.write("Calculadora de area y perimetro de figuras geometricas");
+document.write("<br>");
+document.write("<br>");
+
+/* creo variables */
+var radio;
+var ladoPentagono;
+var apotemaPentagono;
+var baseRectangulo;
+var alturaRectangulo;
+
+/* pido datos en un dialogo del explorador */
+radio = prompt('Dame el radio del circulo: ','');
+ladoPentagono = prompt('Dame el lado del pentagono: ','');
+apotemaPentagono = prompt('Dame la apotema del pentagono: ','');
+baseRectangulo = prompt('Dame la base del rectangulo: ','');
+alturaRectangulo = prompt('Dame la altura del rectangulo: ','');
+
+/* convierto valores a numericos */
+radio = parseFloat(radio);
+ladoPentagono = parseFloat(ladoPentagono);
+apotemaPentagono = parseFloat(apotemaPentagono);
+baseRectangulo = parseFloat(baseRectangulo);
+alturaRectangulo = parseFloat(alturaRectangulo);
+
+/* hago operaciones */
+
+/* circulo */
+var areaCirculo = 3.1416 * radio * radio;
+var perimetroCirculo = 2 * 3.1416 * radio;
+
+/* pentagono */
+var perimetroPentagono = 5 * ladoPentagono;
+var areaPentagono = (perimetroPentagono * apotemaPentagono) / 2;
+
+/* rectangulo */
+var areaRectangulo = baseRectangulo * alturaRectangulo;
+var perimetroRectangulo = (2 * baseRectangulo) + (2 * alturaRectangulo);
+
+/* escribo resultados */
+document.write("RESULTADOS");
+document.write("<br>");
+document.write("<br>");
+
+document.write("Area del circulo: ");
+document.write(areaCirculo);
+document.write("<br>");
+
+document.write("Perimetro del circulo: ");
+document.write(perimetroCirculo);
+document.write("<br>");
+document.write("<br>");
+
+document.write("Area del pentagono: ");
+document.write(areaPentagono);
+document.write("<br>");
+
+document.write("Perimetro del pentagono: ");
+document.write(perimetroPentagono);
+document.write("<br>");
+document.write("<br>");
+
+document.write("Area del rectangulo: ");
+document.write(areaRectangulo);
+document.write("<br>");
+
+document.write("Perimetro del rectangulo: ");
+document.write(perimetroRectangulo);
+
+</script>
